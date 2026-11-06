@@ -1,0 +1,39 @@
+{
+  "name": "zid-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Zid (zid.sa) stores: ask Claude about sales, orders, products, low stock, abandoned carts, customers and coupons. Read-only, PII-masked, Arabic/English.",
+  "type": "module",
+  "bin": {
+    "zid-mcp": "src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test --no-warnings test/*.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "zid",
+    "zid.sa",
+    "saudi",
+    "ecommerce",
+    "claude",
+    "arabic",
+    "salla",
+    "orders",
+    "abandoned-carts"
+  ],
+  "repository": "github:alycheaib/zid-mcp",
+  "author": "Aly Cheaib",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}
